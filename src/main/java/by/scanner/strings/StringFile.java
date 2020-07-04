@@ -1,4 +1,4 @@
-package by.scanner;
+package by.scanner.strings;
 
 public class StringFile {
     public static final String ErrorToConnect = "Error to connect to website. Check url or access to site";

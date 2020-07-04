@@ -68,3 +68,45 @@
 2020-07-0416:47:39 INFO  Methods:37 - Please enter website
 2020-07-0416:47:51 INFO  Methods:19 - Please enter a count of words
 2020-07-0416:47:54 INFO  Methods:31 - Please enter your word
+2020-07-0417:05:46 INFO  Methods:38 - Please enter website
+2020-07-0417:05:53 INFO  Methods:20 - Please enter a count of words
+2020-07-0417:05:55 INFO  Methods:32 - Please enter your word
+2020-07-0417:05:55 ERROR TestHtmlParse:20 - Error to connect to website. Check url or access to site
+2020-07-0417:57:28 INFO  Methods:38 - Please enter website
+2020-07-0417:57:52 INFO  Methods:20 - Please enter a count of words
+2020-07-0417:57:56 INFO  Methods:38 - Please enter website
+2020-07-0417:58:02 INFO  Methods:20 - Please enter a count of words
+2020-07-0417:58:03 INFO  Methods:32 - Please enter your word
+2020-07-0417:58:06 INFO  Methods:32 - Please enter your word
+2020-07-0417:58:12 INFO  Methods:32 - Please enter your word
+2020-07-0417:58:41 INFO  Methods:38 - Please enter website
+2020-07-0417:58:43 INFO  Methods:20 - Please enter a count of words
+2020-07-0417:58:45 INFO  Methods:32 - Please enter your word
+2020-07-0417:58:47 INFO  Methods:32 - Please enter your word
+2020-07-0417:58:50 INFO  Methods:32 - Please enter your word
+2020-07-0417:59:46 INFO  Methods:38 - Please enter website
+2020-07-0418:04:56 INFO  Methods:20 - Please enter a count of words
+2020-07-0418:04:57 INFO  Methods:32 - Please enter your word
+2020-07-0418:04:59 ERROR TestHtmlParse:20 - Error to connect to website. Check url or access to site
+2020-07-0418:07:37 INFO  Methods:38 - Please enter website
+2020-07-0418:07:42 INFO  Methods:20 - Please enter a count of words
+2020-07-0418:07:45 INFO  Methods:32 - Please enter your word
+2020-07-0418:07:48 INFO  Methods:32 - Please enter your word
+2020-07-0418:07:51 INFO  Methods:32 - Please enter your word
+2020-07-0418:08:11 INFO  Methods:38 - Please enter website
+2020-07-0418:08:33 INFO  Methods:20 - Please enter a count of words
+2020-07-0418:08:34 INFO  Methods:32 - Please enter your word
+2020-07-0418:08:36 ERROR TestHtmlParse:20 - Error to connect to website. Check url or access to site
+2020-07-0418:49:34 INFO  Methods:38 - Please enter website
+2020-07-0418:49:51 INFO  Methods:20 - Please enter a count of words
+2020-07-0418:49:52 INFO  Methods:32 - Please enter your word
+2020-07-0418:49:57 INFO  Methods:32 - Please enter your word
+2020-07-0418:49:58 INFO  Methods:32 - Please enter your word
+2020-07-0418:50:57 INFO  Methods:38 - Please enter website
+2020-07-0418:53:46 INFO  Methods:20 - Please enter a count of words
+2020-07-0418:53:48 INFO  Methods:32 - Please enter your word
+2020-07-0418:53:58 ERROR TestHtmlParse:20 - Error to connect to website. Check url or access to site
+2020-07-0423:27:14 INFO  Methods:38 - Please enter website
+2020-07-0423:30:39 INFO  Methods:38 - Please enter website
+2020-07-0423:30:42 INFO  Methods:20 - Please enter a count of words
+2020-07-0423:30:43 INFO  Methods:32 - Please enter your word

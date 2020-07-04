@@ -2,12 +2,12 @@ package by.scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import by.scanner.parse.MethodsParse;
+import by.scanner.strings.StringFile;
 import org.junit.jupiter.api.Test;
 
-import java.util.Optional;
-
 class MethodsTest {
-    private final Methods methods = new Methods();
+    private final MethodsParse methods = new MethodsParse();
 
     private final String htmlCode = "<h1>Java<h1><h2>Java Python<h2>";
     private final String codeAfterRemovingTags = "JavaJava Python";

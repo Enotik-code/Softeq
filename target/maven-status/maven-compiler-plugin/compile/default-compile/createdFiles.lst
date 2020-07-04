@@ -1,3 +1,5 @@
-by\scanner\Methods.class
+by\scanner\parse\MethodsParse.class
 by\scanner\Application.class
-by\scanner\TestHtmlParse.class
+by\scanner\parse\interfaces\ParseInterface.class
+by\scanner\parse\HtmlParse.class
+by\scanner\strings\StringFile.class

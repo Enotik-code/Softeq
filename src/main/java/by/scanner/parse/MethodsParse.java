@@ -1,16 +1,17 @@
-package by.scanner;
+package by.scanner.parse;
 
+import by.scanner.parse.interfaces.ParseInterface;
+import by.scanner.strings.StringFile;
 import org.apache.log4j.Logger;
 
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Methods {
-
+public class MethodsParse implements ParseInterface {
     public static Scanner scInteger = new Scanner(System.in);
     public static Scanner scString = new Scanner(System.in);
-    static Logger log = Logger.getLogger(Methods.class.getName());
+    static Logger log = Logger.getLogger(MethodsParse.class.getName());
     public static List<String> wordsList = new ArrayList<>();
 
     public Integer getCountOfWords(){
