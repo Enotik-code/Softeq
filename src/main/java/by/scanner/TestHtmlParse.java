@@ -16,7 +16,7 @@ public class TestHtmlParse {
             for(Scanner sc = new Scanner(new URL(url).openStream()); sc.hasNext(); )
                 sb.append(sc.nextLine()).append('\n');
         } catch (IOException e) {
-            log.error("Error to connect to website. Check url or access to site");
+            log.error(StringFile.ErrorToConnect);
         }
         return sb.toString();
     }

@@ -36,3 +36,35 @@
 2020-07-0414:15:38 INFO  Methods:36 - Enter website
 2020-07-0414:15:49 INFO  Methods:31 - Please enter u word
 2020-07-0414:20:33 ERROR Methods:22 - That not a number!
+2020-07-0414:56:57 INFO  Methods:20 - Please enter a count of words!
+2020-07-0414:57:11 ERROR Methods:22 - That not a number!
+2020-07-0414:57:13 INFO  Methods:36 - Enter website
+2020-07-0414:57:15 INFO  Methods:31 - Please enter u word
+2020-07-0415:18:58 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0415:39:53 INFO  Methods:18 - Please enter a count of words
+2020-07-0415:39:56 INFO  Methods:34 - Please enter website
+2020-07-0415:40:08 INFO  Methods:29 - Please enter your word
+2020-07-0415:40:13 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0415:51:37 INFO  Methods:18 - Please enter a count of words
+2020-07-0415:51:39 INFO  Methods:34 - Please enter website
+2020-07-0415:51:53 INFO  Methods:29 - Please enter your word
+2020-07-0415:54:46 INFO  Methods:18 - Please enter a count of words
+2020-07-0415:54:48 INFO  Methods:34 - Please enter website
+2020-07-0415:54:49 INFO  Methods:29 - Please enter your word
+2020-07-0415:55:03 INFO  Methods:18 - Please enter a count of words
+2020-07-0415:55:04 INFO  Methods:34 - Please enter website
+2020-07-0415:55:06 INFO  Methods:29 - Please enter your word
+2020-07-0415:57:22 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0415:58:51 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0415:59:37 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0416:01:37 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0416:02:28 INFO  Methods:18 - Please enter a count of words
+2020-07-0416:02:33 INFO  Methods:34 - Please enter website
+2020-07-0416:03:28 INFO  Methods:29 - Please enter your word
+2020-07-0416:04:39 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0416:05:04 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0416:05:11 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0416:05:58 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0416:47:39 INFO  Methods:37 - Please enter website
+2020-07-0416:47:51 INFO  Methods:19 - Please enter a count of words
+2020-07-0416:47:54 INFO  Methods:31 - Please enter your word

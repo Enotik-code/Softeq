@@ -1,23 +1,19 @@
 package by.scanner;
 
-import java.util.ArrayList;
-import java.util.List;
+import static by.scanner.Methods.wordsList;
 
 public class Application {
     public static void main(String[] args) throws Exception {
         Methods methods = new Methods();
         TestHtmlParse testHtmlParse = new TestHtmlParse();
-        /*Integer countOfWord = methods.getCountOfWords();
-        String webSite = methods.getWebSite();
 
-        List<String> stringList = new ArrayList<>();
-        for (int i = 0; i < countOfWord ; i++) {
-           stringList.add(methods.getWords());
+        String webSite = methods.getWebSite();
+        Integer countOfWords = methods.getCountOfWords();
+        methods.getWords(countOfWords);
+
+        for (int i = 0; i < countOfWords ; i++) {
+            System.out.println(methods.getCountWordsOnHtml(testHtmlParse.getHtmlCode(webSite), wordsList.get(i)));
         }
-        for (int i = 0; i < countOfWord ; i++) {
-            methods.getCountWordsOnHtml(testHtmlParse.getHtmlCode(webSite), stringList.get(i));
-        }*/
-        System.out.println(methods.removeTags("Java<html>Java<h1>"));
     }
 
 }

@@ -7,25 +7,21 @@ import org.junit.jupiter.api.Test;
 import java.util.Optional;
 
 class MethodsTest {
-    Methods methods = new Methods();
+    private final Methods methods = new Methods();
+
+    private final String htmlCode = "<h1>Java<h1><h2>Java Python<h2>";
+    private final String codeAfterRemovingTags = "JavaJava Python";
+    private final String myWord = "Java";
+    private final String countOfMyWord = "Result for Java - 2";
 
     @Test
-    void getCountOfWords() {
-        assertEquals(2, Optional.ofNullable(methods.getCountOfWords()));
+    void getCountWordsOnHtmlTest() {
+      assertEquals( countOfMyWord, methods.getCountWordsOnHtml(htmlCode,myWord));
     }
 
     @Test
-    void getWords() {
-        assertEquals("word", Optional.ofNullable(methods.getWords()));
-    }
-
-    @Test
-    void getWebSite() {
-        assertEquals("site", Optional.ofNullable(methods.getWebSite()));
-    }
-
-    @Test
-    void getCountWordsOnHtml() {
+    void removeDefaultTagsTest(){
+        assertEquals(codeAfterRemovingTags, methods.removeTags(htmlCode, StringFile.RegexForRemoveTags));
     }
 
 }

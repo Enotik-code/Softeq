@@ -6,20 +6,19 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static by.scanner.TestHtmlParse.log;
-
 public class Methods {
 
     public static Scanner scInteger = new Scanner(System.in);
     public static Scanner scString = new Scanner(System.in);
     static Logger log = Logger.getLogger(Methods.class.getName());
+    public static List<String> wordsList = new ArrayList<>();
 
     public Integer getCountOfWords(){
         int number;
         do {
-            log.info("Please enter a count of words!");
+            log.info(StringFile.EnterCountOfWords);
             while (!scInteger.hasNextInt()) {
-                log.error("That not a number!");
+                log.error(StringFile.ErrorToGetNumberOfWords);
                 scInteger.next();
             }
             number = scInteger.nextInt();
@@ -27,19 +26,22 @@ public class Methods {
         return number;
     }
 
-    public String getWords(){
-            log.info("Please enter u word");
-            return scString.nextLine();
+    public void getWords(int countOfWords){
+        for (int i = 0; i < countOfWords; i++) {
+            log.info(StringFile.EnterYourWord);
+            wordsList.add(scString.nextLine());
+        }
     }
 
     public String getWebSite(){
-        log.info("Enter website");
+        log.info(StringFile.EnterWebSite);
         return scString.nextLine();
     }
 
-    public void getCountWordsOnHtml(String webSiteHtml, String myWord) {
+    public String getCountWordsOnHtml(String webSiteHtml, String myWord) {
         Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(removeTags(webSiteHtml));
+        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.RegexForRemoveJavaScriptCode),
+                StringFile.RegexForRemoveTags));
         HashMap<String, Integer> wordToCount = new HashMap<>();
         while(matcher.find()){
             if(!wordToCount.containsKey(myWord)){
@@ -47,19 +49,12 @@ public class Methods {
             }
             wordToCount.put(myWord, wordToCount.get(myWord) + 1);
         }
-        for (String word : wordToCount.keySet() ) {
-            System.out.println("result for " + word + " - " + wordToCount.get(word));
-        }
+         return StringFile.Result + myWord + " - " + wordToCount.get(myWord);
     }
 
-
-
-    public String removeTags(String htmlCode){
-        Pattern pattern = Pattern.compile("<([\\s\\S]+?)>");
+    public String removeTags(String htmlCode, String regex){
+        Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(htmlCode);
-        while (matcher.find()){
-            matcher.replaceAll("");
-        }
-        return htmlCode;
+        return  matcher.replaceAll("");
     }
 }
