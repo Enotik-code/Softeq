@@ -1,12 +1,13 @@
 package by.scanner;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Methods {
 
     public static Scanner scInteger = new Scanner(System.in);
     public static Scanner scString = new Scanner(System.in);
-    public static List<String> stringList = new ArrayList<String>();
 
     public Integer getCountOfWords(){
         int number;
@@ -21,7 +22,6 @@ public class Methods {
         return number;
     }
 
-
     public String getWords(){
             System.out.println("Please enter u word");
             return scString.nextLine();
@@ -32,26 +32,29 @@ public class Methods {
         return scString.nextLine();
     }
 
-
-    public Integer countWords(String input, String word)
-    {
-        return (int) Arrays.stream(input.split("")).filter(s -> s.contains(word)).count();
-    }
-
-    public void getCountWords(String webSiteHtml, String myWord) {
-        String[] words = webSiteHtml.split("\\s+");
+    public void getCountWordsOnHtml(String webSiteHtml, String myWord) {
+        removeTags(webSiteHtml);
+        Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(webSiteHtml);
         HashMap<String, Integer> wordToCount = new HashMap<>();
-        for (String word : words) {
-            if (word.equals(myWord)) {
-                if (!wordToCount.containsKey(word)) {
-                    wordToCount.put(word, 0);
-                }
-                wordToCount.put(word, wordToCount.get(word) + 1);
+        while(matcher.find()){
+            if(!wordToCount.containsKey(myWord)){
+                wordToCount.put(myWord, 0);
             }
+            wordToCount.put(myWord, wordToCount.get(myWord) + 1);
         }
         for (String word : wordToCount.keySet() ) {
             System.out.println(word + " " + wordToCount.get(word));
         }
     }
 
+
+
+    public void removeTags(String text){
+        Pattern pattern = Pattern.compile("<([\\s\\S]+?>)");
+        Matcher matcher = pattern.matcher(text);
+        while (matcher.find()){
+            matcher.replaceAll("");
+        }
+    }
 }
