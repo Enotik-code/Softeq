@@ -7,7 +7,7 @@ public class Application {
     public static void main(String[] args) throws Exception {
         Methods methods = new Methods();
         TestHtmlParse testHtmlParse = new TestHtmlParse();
-        Integer countOfWord = methods.getCountOfWords();
+        /*Integer countOfWord = methods.getCountOfWords();
         String webSite = methods.getWebSite();
 
         List<String> stringList = new ArrayList<>();
@@ -16,7 +16,8 @@ public class Application {
         }
         for (int i = 0; i < countOfWord ; i++) {
             methods.getCountWordsOnHtml(testHtmlParse.getHtmlCode(webSite), stringList.get(i));
-        }
+        }*/
+        System.out.println(methods.removeTags("Java<html>Java<h1>"));
     }
 
 }

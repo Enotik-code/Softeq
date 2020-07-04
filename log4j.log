@@ -2,3 +2,37 @@
 2020-07-0413:36:04 INFO  TestHtmlParse:19 - Error 403
 2020-07-0413:36:35 INFO  TestHtmlParse:19 - Error 403
 2020-07-0413:36:36 INFO  TestHtmlParse:19 - Error 403
+2020-07-0413:45:09 INFO  Methods:20 - Please enter a count of words!
+2020-07-0413:45:49 INFO  Methods:20 - Please enter a count of words!
+2020-07-0413:45:52 ERROR Methods:22 - That not a number!
+2020-07-0413:45:54 INFO  Methods:36 - Enter website
+2020-07-0413:46:06 INFO  Methods:20 - Please enter a count of words!
+2020-07-0413:46:08 INFO  Methods:36 - Enter website
+2020-07-0413:46:24 INFO  Methods:31 - Please enter u word
+2020-07-0413:46:27 ERROR TestHtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0413:46:44 INFO  Methods:20 - Please enter a count of words!
+2020-07-0413:46:45 INFO  Methods:36 - Enter website
+2020-07-0413:46:48 INFO  Methods:31 - Please enter u word
+2020-07-0413:47:54 INFO  Methods:20 - Please enter a count of words!
+2020-07-0413:48:01 INFO  Methods:36 - Enter website
+2020-07-0413:48:03 INFO  Methods:31 - Please enter u word
+2020-07-0413:48:06 INFO  Methods:31 - Please enter u word
+2020-07-0413:48:10 INFO  Methods:51 - result:
+2020-07-0413:48:10 INFO  Methods:51 - result:
+2020-07-0413:48:56 INFO  Methods:20 - Please enter a count of words!
+2020-07-0413:49:00 INFO  Methods:36 - Enter website
+2020-07-0413:49:02 INFO  Methods:31 - Please enter u word
+2020-07-0413:49:07 INFO  Methods:31 - Please enter u word
+2020-07-0413:59:40 INFO  Methods:20 - Please enter a count of words!
+2020-07-0414:00:43 INFO  Methods:31 - Please enter u word
+2020-07-0414:06:59 INFO  Methods:31 - Please enter u word
+2020-07-0414:07:12 INFO  Methods:20 - Please enter a count of words!
+2020-07-0414:07:14 INFO  Methods:36 - Enter website
+2020-07-0414:07:16 INFO  Methods:31 - Please enter u word
+2020-07-0414:07:20 INFO  Methods:20 - Please enter a count of words!
+2020-07-0414:07:26 INFO  Methods:36 - Enter website
+2020-07-0414:07:27 INFO  Methods:31 - Please enter u word
+2020-07-0414:15:37 INFO  Methods:20 - Please enter a count of words!
+2020-07-0414:15:38 INFO  Methods:36 - Enter website
+2020-07-0414:15:49 INFO  Methods:31 - Please enter u word
+2020-07-0414:20:33 ERROR Methods:22 - That not a number!
