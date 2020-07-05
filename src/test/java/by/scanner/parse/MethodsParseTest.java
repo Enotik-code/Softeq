@@ -16,7 +16,7 @@ class MethodsParseTest {
 
     @Test
     void getCountWordsOnHtmlTest() {
-      assertEquals( countOfMyWord, methods.getCountWordsOnHtml(htmlCode,myWord));
+      assertEquals( countOfMyWord, methods.setCountWordsOnHtml(htmlCode,myWord));
     }
 
     @Test

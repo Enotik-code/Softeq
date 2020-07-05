@@ -11,7 +11,7 @@ public class HtmlParse {
 
     static Logger log = Logger.getLogger(HtmlParse.class.getName());
 
-    public String getHtmlCode(String url) {
+    public String setHtmlCode(String url) {
             Document document = new Document(url);
         try {
             document = Jsoup.connect(url).get();

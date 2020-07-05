@@ -14,9 +14,9 @@ public class MethodsParse implements ParseInterface {
 
     static Logger log = Logger.getLogger(MethodsParse.class.getName());
 
-    public static final List<String> wordsList = new ArrayList<>();
+    protected static final List<String> wordsList = new ArrayList<>();
 
-    public Integer getCountOfWords(){
+    public Integer setCountOfWords(){
         int number;
         do {
             log.info(StringFile.EnterCountOfWords);
@@ -29,19 +29,23 @@ public class MethodsParse implements ParseInterface {
         return number;
     }
 
-    public void getWords(int countOfWords){
+    public void setWords(int countOfWords){
         for (int i = 0; i < countOfWords; i++) {
             log.info(StringFile.EnterYourWord);
             wordsList.add(scString.nextLine());
         }
     }
 
-    public String getWebSite(){
+    public String getWord(int numberInList){
+        return wordsList.get(numberInList);
+    }
+
+    public String setWebSite(){
         log.info(StringFile.EnterWebSite);
         return scString.nextLine();
     }
 
-    public String getCountWordsOnHtml(String webSiteHtml, String myWord) {
+    public String setCountWordsOnHtml(String webSiteHtml, String myWord) {
         Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.RegexForRemoveJavaScriptCode),
                 StringFile.RegexForRemoveTags));

@@ -118,3 +118,7 @@
 2020-07-0515:14:10 INFO  MethodsParse:22 - Please enter a count of words
 2020-07-0515:14:11 INFO  MethodsParse:34 - Please enter your word
 2020-07-0515:14:14 INFO  Application:21 - Result for Jacoco - 32
+2020-07-0515:31:40 INFO  MethodsParse:44 - Please enter website
+2020-07-0515:31:51 INFO  MethodsParse:22 - Please enter a count of words
+2020-07-0515:31:53 INFO  MethodsParse:34 - Please enter your word
+2020-07-0515:31:56 INFO  Application:20 - Result for Jacoco - 32

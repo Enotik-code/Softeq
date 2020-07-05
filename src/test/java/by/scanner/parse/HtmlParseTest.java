@@ -12,13 +12,13 @@ class HtmlParseTest {
     private final String doctypeHtml = "<!DOCTYPE html>";
 
     @Test
-    void getHtmlCode() {
-        assertEquals(true, htmlParse.getHtmlCode(urlWithAccess).startsWith(doctypeHtml));
+    void setHtmlCode() {
+        assertEquals(true, htmlParse.setHtmlCode(urlWithAccess).startsWith(doctypeHtml));
     }
 
     @Test
-    void getHtmlCodeFromNotAvailableSite()
+    void setHtmlCodeFromNotAvailableSite()
     {
-        assertEquals("", htmlParse.getHtmlCode(urlWithoutAccess));
+        assertEquals("", htmlParse.setHtmlCode(urlWithoutAccess));
     }
 }
