@@ -1,0 +1,64 @@
+
+Lby.scanner.parse.HtmlParse#setHtmlCode(Ljava/lang/String;)Ljava/lang/String;Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java ("6*”
+2Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/­
+ª
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/$
+documentorg.jsoup.nodes.Document"__id* 
+
+%3org.jsoup.nodes.Document*
+1*Á
+4Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/Ú×
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/
+%3org.jsoup.nodes.Document"4org.jsoup.Connection#get()Lorg/jsoup/nodes/Document;*
+
+%2org.jsoup.Connection2get()*
+2*Õ
+5Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (î
+ë
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java ()
+%2org.jsoup.Connection"Aorg.jsoup.Jsoup#connect(Ljava/lang/String;)Lorg/jsoup/Connection;*"
+org.jsoup.Jsoup*
+
+urljava.lang.String*
+4*‹
+6Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java- (0™–
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java$ (,
+%0org.jsoup.nodes.Document"org.jsoup.nodes.DocumentØ
+Õ
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java  (1
+%1"4org.jsoup.nodes.Document#<init>(Ljava/lang/String;)V* 
+
+%0org.jsoup.nodes.Document*
+
+urljava.lang.String­
+ª
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (2$
+documentorg.jsoup.nodes.Document"__id* 
+
+%0org.jsoup.nodes.Document*
+5*¸
+1Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (ÞÛ
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java ("
+%7java.lang.String"1org.jsoup.nodes.Node#toString()Ljava/lang/String;*&
+$
+documentorg.jsoup.nodes.Document2
+toString()"v
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (#
+
+%7java.lang.String:
+urljava.lang.StringB
+by.scanner.parse.HtmlParse
