@@ -20,5 +20,4 @@ public class HtmlParse {
         }
         return document.toString();
     }
-
 }

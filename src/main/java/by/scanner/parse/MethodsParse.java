@@ -9,10 +9,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MethodsParse implements ParseInterface {
-    public static Scanner scInteger = new Scanner(System.in);
-    public static Scanner scString = new Scanner(System.in);
+    public static final Scanner scInteger = new Scanner(System.in);
+    public static final Scanner scString = new Scanner(System.in);
+
     static Logger log = Logger.getLogger(MethodsParse.class.getName());
-    public static List<String> wordsList = new ArrayList<>();
+
+    public static final List<String> wordsList = new ArrayList<>();
 
     public Integer getCountOfWords(){
         int number;

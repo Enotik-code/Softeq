@@ -9,8 +9,7 @@ import static by.scanner.parse.MethodsParse.wordsList;
 public class Application {
     static Logger log = Logger.getLogger(Application.class.getName());
 
-    public static void main(String[] args) throws Exception {
-
+    public static void main(String[] args){
         MethodsParse methods = new MethodsParse();
         HtmlParse htmlParse = new HtmlParse();
 
@@ -19,7 +18,7 @@ public class Application {
         methods.getWords(countOfWords);
 
         for (int i = 0; i < countOfWords ; i++) {
-            System.out.println(methods.getCountWordsOnHtml(htmlParse.getHtmlCode(webSite), wordsList.get(i)));
+            log.info(methods.getCountWordsOnHtml(htmlParse.getHtmlCode(webSite), wordsList.get(i)));
         }
     }
 

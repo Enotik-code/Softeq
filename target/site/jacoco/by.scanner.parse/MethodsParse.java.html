@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MethodsParse.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SoftQ</a> &gt; <a href="index.source.html" class="el_package">by.scanner.parse</a> &gt; <span class="el_source">MethodsParse.java</span></div><h1>MethodsParse.java</h1><pre class="source lang-java linenums">package by.scanner.parse;
+
+import by.scanner.parse.interfaces.ParseInterface;
+import by.scanner.strings.StringFile;
+import org.apache.log4j.Logger;
+
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+<span class="nc" id="L11">public class MethodsParse implements ParseInterface {</span>
+
+<span class="nc" id="L13">    public static Scanner scInteger = new Scanner(System.in);</span>
+<span class="nc" id="L14">    public static Scanner scString = new Scanner(System.in);</span>
+
+<span class="nc" id="L16">    static Logger log = Logger.getLogger(MethodsParse.class.getName());</span>
+
+<span class="nc" id="L18">    public static List&lt;String&gt; wordsList = new ArrayList&lt;&gt;();</span>
+
+    public Integer getCountOfWords(){
+        int number;
+        do {
+<span class="nc" id="L23">            log.info(StringFile.EnterCountOfWords);</span>
+<span class="nc bnc" id="L24" title="All 2 branches missed.">            while (!scInteger.hasNextInt()) {</span>
+<span class="nc" id="L25">                log.error(StringFile.ErrorToGetNumberOfWords);</span>
+<span class="nc" id="L26">                scInteger.next();</span>
+            }
+<span class="nc" id="L28">            number = scInteger.nextInt();</span>
+<span class="nc bnc" id="L29" title="All 2 branches missed.">        } while (number &lt;= 0);</span>
+<span class="nc" id="L30">        return number;</span>
+    }
+
+    public void getWords(int countOfWords){
+<span class="nc bnc" id="L34" title="All 2 branches missed.">        for (int i = 0; i &lt; countOfWords; i++) {</span>
+<span class="nc" id="L35">            log.info(StringFile.EnterYourWord);</span>
+<span class="nc" id="L36">            wordsList.add(scString.nextLine());</span>
+        }
+<span class="nc" id="L38">    }</span>
+
+    public String getWebSite(){
+<span class="nc" id="L41">        log.info(StringFile.EnterWebSite);</span>
+<span class="nc" id="L42">        return scString.nextLine();</span>
+    }
+
+    public String getCountWordsOnHtml(String webSiteHtml, String myWord) {
+<span class="nc" id="L46">        Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);</span>
+<span class="nc" id="L47">        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.RegexForRemoveJavaScriptCode),</span>
+                StringFile.RegexForRemoveTags));
+<span class="nc" id="L49">        HashMap&lt;String, Integer&gt; wordToCount = new HashMap&lt;&gt;();</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">        while(matcher.find()){</span>
+<span class="nc bnc" id="L51" title="All 2 branches missed.">            if(!wordToCount.containsKey(myWord)){</span>
+<span class="nc" id="L52">                wordToCount.put(myWord, 0);</span>
+            }
+<span class="nc" id="L54">            wordToCount.put(myWord, wordToCount.get(myWord) + 1);</span>
+        }
+<span class="nc" id="L56">         return StringFile.Result + myWord + &quot; - &quot; + wordToCount.get(myWord);</span>
+    }
+
+    public String removeTags(String htmlCode, String regex){
+<span class="nc" id="L60">        Pattern pattern = Pattern.compile(regex);</span>
+<span class="nc" id="L61">        Matcher matcher = pattern.matcher(htmlCode);</span>
+<span class="nc" id="L62">        return  matcher.replaceAll(&quot;&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

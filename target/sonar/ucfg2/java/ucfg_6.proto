@@ -1,0 +1,52 @@
+
+Lby.scanner.parse.HtmlParse#getHtmlCode(Ljava/lang/String;)Ljava/lang/String;Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java ("6*î
+2Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/≠
+™
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/$
+documentorg.jsoup.nodes.Document"__id* 
+
+%1org.jsoup.nodes.Document*
+1*¡
+4Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/⁄◊
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (/
+%1org.jsoup.nodes.Document"4org.jsoup.Connection#get()Lorg/jsoup/nodes/Document;*
+
+%0org.jsoup.Connection2get()*
+2*’
+5Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (Ó
+Î
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java ()
+%0org.jsoup.Connection"Aorg.jsoup.Jsoup#connect(Ljava/lang/String;)Lorg/jsoup/Connection;*"
+org.jsoup.Jsoup*
+
+urljava.lang.String*
+4*˙
+6Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java ( ì
+ê
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (!$
+documentorg.jsoup.nodes.Document"__id*
+""*
+5*∏
+1Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (ﬁ€
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java ("
+%5java.lang.String"1org.jsoup.nodes.Node#toString()Ljava/lang/String;*&
+$
+documentorg.jsoup.nodes.Document2
+toString()"v
+Z
+PC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/HtmlParse.java (#
+
+%5java.lang.String:
+urljava.lang.StringB
+by.scanner.parse.HtmlParse
