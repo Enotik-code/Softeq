@@ -19,9 +19,9 @@ public class MethodsParse implements ParseInterface {
     public Integer setCountOfWords(){
         int number;
         do {
-            log.info(StringFile.EnterCountOfWords);
+            log.info(StringFile.PLEASE_ENTER_A_COUNT_OF_WORDS);
             while (!scInteger.hasNextInt()) {
-                log.error(StringFile.ErrorToGetNumberOfWords);
+                log.error(StringFile.THAT_NOT_A_NUMBER);
                 scInteger.next();
             }
             number = scInteger.nextInt();
@@ -31,7 +31,7 @@ public class MethodsParse implements ParseInterface {
 
     public void setWords(int countOfWords){
         for (int i = 0; i < countOfWords; i++) {
-            log.info(StringFile.EnterYourWord);
+            log.info(StringFile.PLEASE_ENTER_YOUR_WORD);
             wordsList.add(scString.nextLine());
         }
     }
@@ -41,14 +41,14 @@ public class MethodsParse implements ParseInterface {
     }
 
     public String setWebSite(){
-        log.info(StringFile.EnterWebSite);
+        log.info(StringFile.PLEASE_ENTER_WEBSITE);
         return scString.nextLine();
     }
 
     public String setCountWordsOnHtml(String webSiteHtml, String myWord) {
         Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);
-        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.RegexForRemoveJavaScriptCode),
-                StringFile.RegexForRemoveTags));
+        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.REGEX_FOR_REMOVE_JAVA_SCRIPT_CODE),
+                StringFile.REGEX_FOR_REMOVE_TAGS));
         HashMap<String, Integer> wordToCount = new HashMap<>();
         while(matcher.find()){
             if(!wordToCount.containsKey(myWord)){
@@ -56,7 +56,7 @@ public class MethodsParse implements ParseInterface {
             }
             wordToCount.put(myWord, wordToCount.get(myWord) + 1);
         }
-         return StringFile.Result + myWord + " - " + wordToCount.get(myWord);
+         return StringFile.RESULT_FOR + myWord + " - " + wordToCount.get(myWord);
     }
 
     public String removeTags(String htmlCode, String regex){

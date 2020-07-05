@@ -16,7 +16,7 @@ public class HtmlParse {
         try {
             document = Jsoup.connect(url).get();
         } catch (IOException e) {
-            log.error(StringFile.ErrorToConnect);
+            log.error(StringFile.ERROR_TO_CONNECT_TO_WEBSITE_CHECK_URL_OR_ACCESS_TO_SITE);
         }
         return document.toString();
     }

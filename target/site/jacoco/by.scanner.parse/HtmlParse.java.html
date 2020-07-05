@@ -11,7 +11,7 @@ import java.io.IOException;
 
 <span class="nc" id="L12">    static Logger log = Logger.getLogger(HtmlParse.class.getName());</span>
 
-    public String getHtmlCode(String url) {
+    public String setHtmlCode(String url) {
 <span class="nc" id="L15">            Document document = new Document(url);</span>
         try {
 <span class="nc" id="L17">            document = Jsoup.connect(url).get();</span>

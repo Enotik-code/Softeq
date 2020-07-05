@@ -14,9 +14,9 @@ import java.util.regex.Pattern;
 
 <span class="nc" id="L15">    static Logger log = Logger.getLogger(MethodsParse.class.getName());</span>
 
-<span class="nc" id="L17">    public static final List&lt;String&gt; wordsList = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L17">    protected static final List&lt;String&gt; wordsList = new ArrayList&lt;&gt;();</span>
 
-    public Integer getCountOfWords(){
+    public Integer setCountOfWords(){
         int number;
         do {
 <span class="nc" id="L22">            log.info(StringFile.EnterCountOfWords);</span>
@@ -29,36 +29,40 @@ import java.util.regex.Pattern;
 <span class="nc" id="L29">        return number;</span>
     }
 
-    public void getWords(int countOfWords){
+    public void setWords(int countOfWords){
 <span class="nc bnc" id="L33" title="All 2 branches missed.">        for (int i = 0; i &lt; countOfWords; i++) {</span>
 <span class="nc" id="L34">            log.info(StringFile.EnterYourWord);</span>
 <span class="nc" id="L35">            wordsList.add(scString.nextLine());</span>
         }
 <span class="nc" id="L37">    }</span>
 
-    public String getWebSite(){
-<span class="nc" id="L40">        log.info(StringFile.EnterWebSite);</span>
-<span class="nc" id="L41">        return scString.nextLine();</span>
+    public String getWord(int numberInList){
+<span class="nc" id="L40">        return wordsList.get(numberInList);</span>
     }
 
-    public String getCountWordsOnHtml(String webSiteHtml, String myWord) {
-<span class="nc" id="L45">        Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);</span>
-<span class="nc" id="L46">        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.RegexForRemoveJavaScriptCode),</span>
+    public String setWebSite(){
+<span class="nc" id="L44">        log.info(StringFile.EnterWebSite);</span>
+<span class="nc" id="L45">        return scString.nextLine();</span>
+    }
+
+    public String setCountWordsOnHtml(String webSiteHtml, String myWord) {
+<span class="nc" id="L49">        Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);</span>
+<span class="nc" id="L50">        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.RegexForRemoveJavaScriptCode),</span>
                 StringFile.RegexForRemoveTags));
-<span class="nc" id="L48">        HashMap&lt;String, Integer&gt; wordToCount = new HashMap&lt;&gt;();</span>
-<span class="nc bnc" id="L49" title="All 2 branches missed.">        while(matcher.find()){</span>
-<span class="nc bnc" id="L50" title="All 2 branches missed.">            if(!wordToCount.containsKey(myWord)){</span>
-<span class="nc" id="L51">                wordToCount.put(myWord, 0);</span>
+<span class="nc" id="L52">        HashMap&lt;String, Integer&gt; wordToCount = new HashMap&lt;&gt;();</span>
+<span class="nc bnc" id="L53" title="All 2 branches missed.">        while(matcher.find()){</span>
+<span class="nc bnc" id="L54" title="All 2 branches missed.">            if(!wordToCount.containsKey(myWord)){</span>
+<span class="nc" id="L55">                wordToCount.put(myWord, 0);</span>
             }
-<span class="nc" id="L53">            wordToCount.put(myWord, wordToCount.get(myWord) + 1);</span>
+<span class="nc" id="L57">            wordToCount.put(myWord, wordToCount.get(myWord) + 1);</span>
         }
-<span class="nc" id="L55">         return StringFile.Result + myWord + &quot; - &quot; + wordToCount.get(myWord);</span>
+<span class="nc" id="L59">         return StringFile.Result + myWord + &quot; - &quot; + wordToCount.get(myWord);</span>
     }
 
     public String removeTags(String htmlCode, String regex){
-<span class="nc" id="L59">        Pattern pattern = Pattern.compile(regex);</span>
-<span class="nc" id="L60">        Matcher matcher = pattern.matcher(htmlCode);</span>
-<span class="nc" id="L61">        return  matcher.replaceAll(&quot;&quot;);</span>
+<span class="nc" id="L63">        Pattern pattern = Pattern.compile(regex);</span>
+<span class="nc" id="L64">        Matcher matcher = pattern.matcher(htmlCode);</span>
+<span class="nc" id="L65">        return  matcher.replaceAll(&quot;&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

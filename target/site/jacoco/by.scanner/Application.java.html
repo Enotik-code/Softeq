@@ -4,23 +4,22 @@ import by.scanner.parse.MethodsParse;
 import by.scanner.parse.HtmlParse;
 import org.apache.log4j.Logger;
 
-import static by.scanner.parse.MethodsParse.wordsList;
 
-<span class="nc" id="L9">public class Application {</span>
-<span class="nc" id="L10">    static Logger log = Logger.getLogger(Application.class.getName());</span>
+<span class="nc" id="L8">public class Application{</span>
+<span class="nc" id="L9">    static Logger log = Logger.getLogger(Application.class.getName());</span>
 
     public static void main(String[] args){
-<span class="nc" id="L13">        MethodsParse methods = new MethodsParse();</span>
-<span class="nc" id="L14">        HtmlParse htmlParse = new HtmlParse();</span>
+<span class="nc" id="L12">        MethodsParse methods = new MethodsParse();</span>
+<span class="nc" id="L13">        HtmlParse htmlParse = new HtmlParse();</span>
 
-<span class="nc" id="L16">        String webSite = methods.getWebSite();</span>
-<span class="nc" id="L17">        Integer countOfWords = methods.getCountOfWords();</span>
-<span class="nc" id="L18">        methods.getWords(countOfWords);</span>
+<span class="nc" id="L15">        String webSite = methods.setWebSite();</span>
+<span class="nc" id="L16">        Integer countOfWords = methods.setCountOfWords();</span>
+<span class="nc" id="L17">        methods.setWords(countOfWords);</span>
 
-<span class="nc bnc" id="L20" title="All 2 branches missed.">        for (int i = 0; i &lt; countOfWords ; i++) {</span>
-<span class="nc" id="L21">            log.info(methods.getCountWordsOnHtml(htmlParse.getHtmlCode(webSite), wordsList.get(i)));</span>
+<span class="nc bnc" id="L19" title="All 2 branches missed.">        for (int i = 0; i &lt; countOfWords ; i++) {</span>
+<span class="nc" id="L20">            log.info(methods.setCountWordsOnHtml(htmlParse.setHtmlCode(webSite), methods.getWord(i)));</span>
         }
-<span class="nc" id="L23">    }</span>
+<span class="nc" id="L22">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

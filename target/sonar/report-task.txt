@@ -3,5 +3,5 @@ projectKey=Enotik-code_Softeq
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.9324
 dashboardUrl=https://sonarcloud.io/dashboard?id=Enotik-code_Softeq
-ceTaskId=AXMe7TMzblIWn9984X-A
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXMe7TMzblIWn9984X-A
+ceTaskId=AXMe9y01liwsLGtKG9m5
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXMe9y01liwsLGtKG9m5

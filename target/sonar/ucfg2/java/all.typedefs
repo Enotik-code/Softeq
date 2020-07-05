@@ -20,29 +20,19 @@ hashCode()java.lang.Object#hashCode()I®
 by.scanner.Applicationjava.lang.Object,
 <init>() by.scanner.Application#<init>()VN
 main([Ljava/lang/String;)1by.scanner.Application#main([Ljava/lang/String;)V>
-*by.scanner.parse.interfaces.ParseInterfacejava.lang.Object¥
+*by.scanner.parse.interfaces.ParseInterfacejava.lang.Object˛
 by.scanner.parse.MethodsParsejava.lang.Object*by.scanner.parse.interfaces.ParseInterfaceL
-getWebSite()<by.scanner.parse.MethodsParse#getWebSite()Ljava/lang/String;3
-<init>()'by.scanner.parse.MethodsParse#<init>()Vî
-0removeTags(Ljava/lang/String;Ljava/lang/String;)`by.scanner.parse.MethodsParse#removeTags(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;W
-getCountOfWords()Bby.scanner.parse.MethodsParse#getCountOfWords()Ljava/lang/Integer;¶
-9getCountWordsOnHtml(Ljava/lang/String;Ljava/lang/String;)iby.scanner.parse.MethodsParse#getCountWordsOnHtml(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;9
-getWords(I)*by.scanner.parse.MethodsParse#getWords(I)V—
-by.scanner.parse.HtmlParsejava.lang.Objecto
-getHtmlCode(Ljava/lang/String;)Lby.scanner.parse.HtmlParse#getHtmlCode(Ljava/lang/String;)Ljava/lang/String;0
-<init>()$by.scanner.parse.HtmlParse#<init>()V÷
-java.lang.Iterablejava.lang.Objectd
-&forEach(Ljava/util/function/Consumer;):java.lang.Iterable#forEach(Ljava/util/function/Consumer;)VH
-spliterator()7java.lang.Iterable#spliterator()Ljava/util/Spliterator;å
-java.util.Collectionjava.lang.Objectjava.lang.IterableJ
-spliterator()9java.util.Collection#spliterator()Ljava/util/Spliterator;j
-(removeIf(Ljava/util/function/Predicate;)>java.util.Collection#removeIf(Ljava/util/function/Predicate;)ZR
-parallelStream()>java.util.Collection#parallelStream()Ljava/util/stream/Stream;B
-stream()6java.util.Collection#stream()Ljava/util/stream/Stream;æ
-java.util.Listjava.util.Collectionjava.lang.ObjectD
-spliterator()3java.util.List#spliterator()Ljava/util/Spliterator;L
-sort(Ljava/util/Comparator;),java.util.List#sort(Ljava/util/Comparator;)Vp
-.replaceAll(Ljava/util/function/UnaryOperator;)>java.util.List#replaceAll(Ljava/util/function/UnaryOperator;)V;
+setWebSite()<by.scanner.parse.MethodsParse#setWebSite()Ljava/lang/String;9
+setWords(I)*by.scanner.parse.MethodsParse#setWords(I)V3
+<init>()'by.scanner.parse.MethodsParse#<init>()VW
+setCountOfWords()Bby.scanner.parse.MethodsParse#setCountOfWords()Ljava/lang/Integer;î
+0removeTags(Ljava/lang/String;Ljava/lang/String;)`by.scanner.parse.MethodsParse#removeTags(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;H
+
+getWord(I):by.scanner.parse.MethodsParse#getWord(I)Ljava/lang/String;¶
+9setCountWordsOnHtml(Ljava/lang/String;Ljava/lang/String;)iby.scanner.parse.MethodsParse#setCountWordsOnHtml(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;—
+by.scanner.parse.HtmlParsejava.lang.Object0
+<init>()$by.scanner.parse.HtmlParse#<init>()Vo
+setHtmlCode(Ljava/lang/String;)Lby.scanner.parse.HtmlParse#setHtmlCode(Ljava/lang/String;)Ljava/lang/String;;
 'org.apache.log4j.spi.AppenderAttachablejava.lang.ObjectÙ.
 org.apache.log4j.Category'org.apache.log4j.spi.AppenderAttachablejava.lang.Objectu
 getInstance(Ljava/lang/Class;)Sorg.apache.log4j.Category#getInstance(Ljava/lang/Class;)Lorg/apache/log4j/Category;W
@@ -222,7 +212,19 @@ nextLine().java.util.Scanner#nextLine()Ljava/lang/String;I
 
 nextInt(I)java.util.Scanner#nextInt(I)I7
 reset(),java.util.Scanner#reset()Ljava/util/Scanner;=
-hasNextBigInteger()&java.util.Scanner#hasNextBigInteger()Z(
+hasNextBigInteger()&java.util.Scanner#hasNextBigInteger()Z÷
+java.lang.Iterablejava.lang.Objectd
+&forEach(Ljava/util/function/Consumer;):java.lang.Iterable#forEach(Ljava/util/function/Consumer;)VH
+spliterator()7java.lang.Iterable#spliterator()Ljava/util/Spliterator;å
+java.util.Collectionjava.lang.Objectjava.lang.IterableJ
+spliterator()9java.util.Collection#spliterator()Ljava/util/Spliterator;j
+(removeIf(Ljava/util/function/Predicate;)>java.util.Collection#removeIf(Ljava/util/function/Predicate;)ZR
+parallelStream()>java.util.Collection#parallelStream()Ljava/util/stream/Stream;B
+stream()6java.util.Collection#stream()Ljava/util/stream/Stream;æ
+java.util.Listjava.util.Collectionjava.lang.ObjectD
+spliterator()3java.util.List#spliterator()Ljava/util/Spliterator;L
+sort(Ljava/util/Comparator;),java.util.List#sort(Ljava/util/Comparator;)Vp
+.replaceAll(Ljava/util/function/UnaryOperator;)>java.util.List#replaceAll(Ljava/util/function/UnaryOperator;)V(
 java.io.Serializablejava.lang.ObjectÅ9
 java.util.regex.Patternjava.lang.Objectjava.io.Serializablei
 &countChars(Ljava/lang/CharSequence;II)?java.util.regex.Pattern#countChars(Ljava/lang/CharSequence;II)I7
