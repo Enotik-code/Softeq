@@ -1,21 +1,21 @@
 
 <by.scanner.parse.MethodsParse#setWebSite()Ljava/lang/String;]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java+ +("1*ù
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java) )("1*ù
 1]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java, ,(³
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java* *(³
 °
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java, ,(
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java* *(
 %0org.apache.log4j.Logger"__id***(
 by.scanner.parse.MethodsParse"
 logˆ
 …
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java, ,(0
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java* *(0
 %1java.lang.String"__id*
 ""øõ
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java, ,(1
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java* *(1
 
 %2void"3org.apache.log4j.Category#info(Ljava/lang/Object;)V*
 
@@ -24,17 +24,17 @@ SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.
 %1java.lang.String2info(Ljava/lang/Object;)‰
 †
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java- -(
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java+ +(
 %3java.util.Scanner"__id*
 ""ÑÎ
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java- -("
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java+ +("
 %4java.lang.String".java.util.Scanner#nextLine()Ljava/lang/String;*
 
 %3java.util.Scanner2
 nextLine()"y
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java- -(#
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java+ +(#
 
 %4java.lang.StringB!
 by.scanner.parse.MethodsParse

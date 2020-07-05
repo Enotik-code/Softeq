@@ -12,6 +12,9 @@ public class MethodsParse implements ParseInterface {
     public static final Scanner scInteger = new Scanner(System.in);
     public static final Scanner scString = new Scanner(System.in);
 
+    private final List<String> wordsList = new ArrayList<>();
+
+
     static Logger log = Logger.getLogger(MethodsParse.class.getName());
 
     public Integer setCountOfWords(){

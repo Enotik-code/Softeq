@@ -1,15 +1,15 @@
 
 Bby.scanner.parse.MethodsParse#setCountOfWords()Ljava/lang/Integer;]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (""6*­
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (""6*­
 3]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (Š
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (Š
 ‡
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
 %10java.util.Scanner"__id*
 ""³°
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java ((
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java ((
 
 %11int"java.util.Scanner#nextInt()I*
 
@@ -17,20 +17,20 @@ SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.
 6
 1*ý
 4]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (³
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (³
 °
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
 %5org.apache.log4j.Logger"__id***(
 by.scanner.parse.MethodsParse"
 logˆ
 …
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (6
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (6
 %6java.lang.String"__id*
 ""ú÷
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (7
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (7
 
 %7void"4org.apache.log4j.Category#error(Ljava/lang/Object;)V*
 
@@ -39,44 +39,44 @@ SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.
 %6java.lang.String2error(Ljava/lang/Object;)‰
 †
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
 %8java.util.Scanner"__id*
 ""ÉÆ
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java ( 
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java ( 
 %9java.lang.String"*java.util.Scanner#next()Ljava/lang/String;*
 
 %8java.util.Scanner2next()*
 5*´
 5]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (‰
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (‰
 †
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
 %3java.util.Scanner"__id*
 ""»¸
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (*
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (*
 %4boolean"java.util.Scanner#hasNextInt()Z*
 
 %3java.util.Scanner2hasNextInt()*
 3
 4*£
 6]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (³
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (³
 °
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
 %0org.apache.log4j.Logger"__id***(
 by.scanner.parse.MethodsParse"
 logˆ
 …
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (=
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (=
 %1java.lang.String"__id*
 ""øõ
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (>
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (>
 
 %2void"3org.apache.log4j.Category#info(Ljava/lang/Object;)V*
 
@@ -85,8 +85,8 @@ SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.
 %1java.lang.String2info(Ljava/lang/Object;)*
 5*Ë
 1]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java ("g
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java ("g
 ]
-SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
+SC:/Users/Antony/IdeaProjects/SoftQ/src/main/java/by/scanner/parse/MethodsParse.java (
 ""B!
 by.scanner.parse.MethodsParse
