@@ -42,81 +42,7 @@ hashCode()java.lang.Object#hashCode()I®
 java.util.Listjava.util.Collectionjava.lang.ObjectD
 spliterator()3java.util.List#spliterator()Ljava/util/Spliterator;L
 sort(Ljava/util/Comparator;),java.util.List#sort(Ljava/util/Comparator;)Vp
-.replaceAll(Ljava/util/function/UnaryOperator;)>java.util.List#replaceAll(Ljava/util/function/UnaryOperator;)V(
-java.lang.Appendablejava.lang.Object+
-java.lang.AutoCloseablejava.lang.Object>
-java.io.Closeablejava.lang.Objectjava.lang.AutoCloseable%
-java.io.Flushablejava.lang.ObjectÆ
-java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.Flushable,
-	write([B)java.io.OutputStream#write([B)V*
-<init>()java.io.OutputStream#<init>()V(
-flush()java.io.OutputStream#flush()V0
-write([BII)!java.io.OutputStream#write([BII)V(
-close()java.io.OutputStream#close()Vé
-java.io.FilterOutputStreamjava.io.OutputStream2
-	write([B)%java.io.FilterOutputStream#write([B)V\
-<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
-flush()#java.io.FilterOutputStream#flush()V0
-write(I)$java.io.FilterOutputStream#write(I)V6
-write([BII)'java.io.FilterOutputStream#write([BII)V.
-close()#java.io.FilterOutputStream#close()VÜ
-java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
-	write([C)java.io.PrintStream#write([C)V)
-print(J)java.io.PrintStream#print(J)V-
-
-println(J)java.io.PrintStream#println(J)V-
-
-println(D)java.io.PrintStream#println(D)V)
-print(F)java.io.PrintStream#print(F)V-
-
-println(F)java.io.PrintStream#println(F)VO
-println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
-<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
-<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)V1
-ensureOpen()!java.io.PrintStream#ensureOpen()V´
-?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;/
-write([BII) java.io.PrintStream#write([BII)V)
-print(Z)java.io.PrintStream#print(Z)V-
-
-setError()java.io.PrintStream#setError()V1
-clearError()!java.io.PrintStream#clearError()V-
-
-println(Z)java.io.PrintStream#println(Z)Vá
--printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;i
-(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V?
-	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
-<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)V)
-write(I)java.io.PrintStream#write(I)Vá
--format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
-	newLine()java.io.PrintStream#newLine()V)
-print(C)java.io.PrintStream#print(C)V1
-checkError()!java.io.PrintStream#checkError()ZO
-println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)V+
-	println()java.io.PrintStream#println()VK
-print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)V'
-close()java.io.PrintStream#close()Ví
-4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
-print(I)java.io.PrintStream#print(I)V-
-
-println(I)java.io.PrintStream#println(I)V-
-
-println(C)java.io.PrintStream#println(C)V'
-flush()java.io.PrintStream#flush()VK
-write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)V´
-?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;ã
-9<init>(ZLjava/io/OutputStream;Ljava/nio/charset/Charset;)Njava.io.PrintStream#<init>(ZLjava/io/OutputStream;Ljava/nio/charset/Charset;)VK
-print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
-1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Vm
- append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
-toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
-<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
-	print([C)java.io.PrintStream#print([C)Vq
-"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;U
-<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)V)
-print(D)java.io.PrintStream#print(D)Vq
-,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V/
-println([C) java.io.PrintStream#println([C)Vã
-9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)V;
+.replaceAll(Ljava/util/function/UnaryOperator;)>java.util.List#replaceAll(Ljava/util/function/UnaryOperator;)V;
 'org.apache.log4j.spi.AppenderAttachablejava.lang.ObjectÙ.
 org.apache.log4j.Category'org.apache.log4j.spi.AppenderAttachablejava.lang.Objectu
 getInstance(Ljava/lang/Class;)Sorg.apache.log4j.Category#getInstance(Ljava/lang/Class;)Lorg/apache/log4j/Category;W
@@ -186,7 +112,9 @@ Jl7dlog(Lorg/apache/log4j/Priority;Ljava/lang/String;Ljava/lang/Throwable;)eorg
 AgetLogger(Ljava/lang/String;Lorg/apache/log4j/spi/LoggerFactory;)rorg.apache.log4j.Logger#getLogger(Ljava/lang/String;Lorg/apache/log4j/spi/LoggerFactory;)Lorg/apache/log4j/Logger;»
 java.util.Iteratorjava.lang.Objectv
 /forEachRemaining(Ljava/util/function/Consumer;)Cjava.util.Iterator#forEachRemaining(Ljava/util/function/Consumer;)V(
-remove()java.util.Iterator#remove()VÙ>
+remove()java.util.Iterator#remove()V+
+java.lang.AutoCloseablejava.lang.Object>
+java.io.Closeablejava.lang.Objectjava.lang.AutoCloseableÙ>
 java.util.Scannerjava.util.Iteratorjava.io.Closeablejava.lang.Object-
 saveState()java.util.Scanner#saveState()V)
 	hasNext()java.util.Scanner#hasNext()Z3
@@ -515,25 +443,7 @@ toString()4java.util.regex.Matcher#toString()Ljava/lang/String;Ø
 group()1java.util.regex.Matcher#group()Ljava/lang/String;I
 hasTransparentBounds()/java.util.regex.Matcher#hasTransparentBounds()Zf
 by.scanner.strings.StringFilejava.lang.Object3
-<init>()'by.scanner.strings.StringFile#<init>()V”
-org.jsoup.Jsoupjava.lang.Object·
-Yparse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)Éorg.jsoup.Jsoup#parse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)Lorg/jsoup/nodes/Document;`
-connect(Ljava/lang/String;)Aorg.jsoup.Jsoup#connect(Ljava/lang/String;)Lorg/jsoup/Connection;Z
-parse(Ljava/net/URL;I)@org.jsoup.Jsoup#parse(Ljava/net/URL;I)Lorg/jsoup/nodes/Document;á
-pclean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;Lorg/jsoup/nodes/Document$OutputSettings;)íorg.jsoup.Jsoup#clean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;Lorg/jsoup/nodes/Document$OutputSettings;)Ljava/lang/String;Æ
-@parse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)jorg.jsoup.Jsoup#parse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;Ñ
-+parse(Ljava/lang/String;Ljava/lang/String;)Uorg.jsoup.Jsoup#parse(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;ú
-7parseBodyFragment(Ljava/lang/String;Ljava/lang/String;)aorg.jsoup.Jsoup#parseBodyFragment(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;x
-%parseBodyFragment(Ljava/lang/String;)Oorg.jsoup.Jsoup#parseBodyFragment(Ljava/lang/String;)Lorg/jsoup/nodes/Document;|
-'parse(Ljava/io/File;Ljava/lang/String;)Qorg.jsoup.Jsoup#parse(Ljava/io/File;Ljava/lang/String;)Lorg/jsoup/nodes/Document;`
-parse(Ljava/lang/String;)Corg.jsoup.Jsoup#parse(Ljava/lang/String;)Lorg/jsoup/nodes/Document;∂
-Dparse(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)norg.jsoup.Jsoup#parse(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)Lorg/jsoup/nodes/Document;ê
-5clean(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Worg.jsoup.Jsoup#clean(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Ljava/lang/String;%
-<init>()org.jsoup.Jsoup#<init>()VÉ
-7isValid(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Horg.jsoup.Jsoup#isValid(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Z¥
-Gclean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)iorg.jsoup.Jsoup#clean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Ljava/lang/String;†
-9parse(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)corg.jsoup.Jsoup#parse(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;(
-org.jsoup.Connectionjava.lang.Object∆$
+<init>()'by.scanner.strings.StringFile#<init>()V∆$
 org.jsoup.nodes.Nodejava.lang.Cloneablejava.lang.ObjectN
 equals(Ljava/lang/Object;)0org.jsoup.nodes.Node#equals(Ljava/lang/Object;)Z0
 hasParent()!org.jsoup.nodes.Node#hasParent()Zk
@@ -743,4 +653,22 @@ CfindFirstElementByTagName(Ljava/lang/String;Lorg/jsoup/nodes/Node;)uorg.jsoup.
 quirksMode()Jorg.jsoup.nodes.Document#quirksMode()Lorg/jsoup/nodes/Document$QuirksMode;E
 clone():org.jsoup.nodes.Document#clone()Lorg/jsoup/nodes/Document;u
 createShell(Ljava/lang/String;)Rorg.jsoup.nodes.Document#createShell(Ljava/lang/String;)Lorg/jsoup/nodes/Document;R
-ensureMetaCharsetElement()4org.jsoup.nodes.Document#ensureMetaCharsetElement()V
+ensureMetaCharsetElement()4org.jsoup.nodes.Document#ensureMetaCharsetElement()V”
+org.jsoup.Jsoupjava.lang.Object·
+Yparse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)Éorg.jsoup.Jsoup#parse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)Lorg/jsoup/nodes/Document;`
+connect(Ljava/lang/String;)Aorg.jsoup.Jsoup#connect(Ljava/lang/String;)Lorg/jsoup/Connection;Z
+parse(Ljava/net/URL;I)@org.jsoup.Jsoup#parse(Ljava/net/URL;I)Lorg/jsoup/nodes/Document;á
+pclean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;Lorg/jsoup/nodes/Document$OutputSettings;)íorg.jsoup.Jsoup#clean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;Lorg/jsoup/nodes/Document$OutputSettings;)Ljava/lang/String;Æ
+@parse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)jorg.jsoup.Jsoup#parse(Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;Ñ
++parse(Ljava/lang/String;Ljava/lang/String;)Uorg.jsoup.Jsoup#parse(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;ú
+7parseBodyFragment(Ljava/lang/String;Ljava/lang/String;)aorg.jsoup.Jsoup#parseBodyFragment(Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;x
+%parseBodyFragment(Ljava/lang/String;)Oorg.jsoup.Jsoup#parseBodyFragment(Ljava/lang/String;)Lorg/jsoup/nodes/Document;|
+'parse(Ljava/io/File;Ljava/lang/String;)Qorg.jsoup.Jsoup#parse(Ljava/io/File;Ljava/lang/String;)Lorg/jsoup/nodes/Document;`
+parse(Ljava/lang/String;)Corg.jsoup.Jsoup#parse(Ljava/lang/String;)Lorg/jsoup/nodes/Document;∂
+Dparse(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)norg.jsoup.Jsoup#parse(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/parser/Parser;)Lorg/jsoup/nodes/Document;ê
+5clean(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Worg.jsoup.Jsoup#clean(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Ljava/lang/String;%
+<init>()org.jsoup.Jsoup#<init>()VÉ
+7isValid(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Horg.jsoup.Jsoup#isValid(Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Z¥
+Gclean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)iorg.jsoup.Jsoup#clean(Ljava/lang/String;Ljava/lang/String;Lorg/jsoup/safety/Whitelist;)Ljava/lang/String;†
+9parse(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)corg.jsoup.Jsoup#parse(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)Lorg/jsoup/nodes/Document;(
+org.jsoup.Connectionjava.lang.Object

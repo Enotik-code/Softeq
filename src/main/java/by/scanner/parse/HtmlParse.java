@@ -11,12 +11,12 @@ public class HtmlParse {
 
     static Logger log = Logger.getLogger(HtmlParse.class.getName());
 
-    public String getHtmlCode(String url){
-        Document document = null;
+    public String getHtmlCode(String url) {
+            Document document = new Document(url);
         try {
             document = Jsoup.connect(url).get();
         } catch (IOException e) {
-        log.error(StringFile.ErrorToConnect);
+            log.error(StringFile.ErrorToConnect);
         }
         return document.toString();
     }

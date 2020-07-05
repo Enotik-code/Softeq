@@ -1,2 +1,2 @@
-by\scanner\TestHtmlParse.class
-by\scanner\MethodsTest.class
+by\scanner\parse\HtmlParseTest.class
+by\scanner\parse\MethodsParseTest.class

@@ -1,4 +1,4 @@
-package by.scanner;
+package by.scanner.parse;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,7 +6,7 @@ import by.scanner.parse.MethodsParse;
 import by.scanner.strings.StringFile;
 import org.junit.jupiter.api.Test;
 
-class MethodsTest {
+class MethodsParseTest {
     private final MethodsParse methods = new MethodsParse();
 
     private final String htmlCode = "<h1>Java<h1><h2>Java Python<h2>";

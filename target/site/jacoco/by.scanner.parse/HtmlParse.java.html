@@ -11,12 +11,12 @@ import java.io.IOException;
 
 <span class="nc" id="L12">    static Logger log = Logger.getLogger(HtmlParse.class.getName());</span>
 
-    public String getHtmlCode(String url){
-<span class="nc" id="L15">        Document document = null;</span>
+    public String getHtmlCode(String url) {
+<span class="nc" id="L15">            Document document = new Document(url);</span>
         try {
 <span class="nc" id="L17">            document = Jsoup.connect(url).get();</span>
 <span class="nc" id="L18">        } catch (IOException e) {</span>
-<span class="nc" id="L19">        log.error(StringFile.ErrorToConnect);</span>
+<span class="nc" id="L19">            log.error(StringFile.ErrorToConnect);</span>
 <span class="nc" id="L20">        }</span>
 <span class="nc" id="L21">        return document.toString();</span>
     }
