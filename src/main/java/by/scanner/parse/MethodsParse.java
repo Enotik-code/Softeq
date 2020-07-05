@@ -14,8 +14,6 @@ public class MethodsParse implements ParseInterface {
 
     static Logger log = Logger.getLogger(MethodsParse.class.getName());
 
-    protected static final List<String> wordsList = new ArrayList<>();
-
     public Integer setCountOfWords(){
         int number;
         do {

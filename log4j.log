@@ -122,3 +122,5 @@
 2020-07-0515:31:51 INFO  MethodsParse:22 - Please enter a count of words
 2020-07-0515:31:53 INFO  MethodsParse:34 - Please enter your word
 2020-07-0515:31:56 INFO  Application:20 - Result for Jacoco - 32
+2020-07-0515:54:30 ERROR HtmlParse:19 - Error to connect to website. Check url or access to site
+2020-07-0515:55:01 ERROR HtmlParse:19 - Error to connect to website. Check url or access to site

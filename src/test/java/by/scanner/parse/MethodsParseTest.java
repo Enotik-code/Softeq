@@ -3,7 +3,11 @@ package by.scanner.parse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import by.scanner.strings.StringFile;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 class MethodsParseTest {
     private final MethodsParse methods = new MethodsParse();
@@ -12,6 +16,8 @@ class MethodsParseTest {
     private final String codeAfterRemovingTags = "JavaJava Python";
     private final String myWord = "Java";
     private final String countOfMyWord = "Result for Java - 2";
+
+    private final List<String> strings = new ArrayList<>();
 
     @Test
     void getCountWordsOnHtmlTest() {

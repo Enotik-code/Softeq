@@ -16,7 +16,7 @@ import java.io.IOException;
         try {
 <span class="nc" id="L17">            document = Jsoup.connect(url).get();</span>
 <span class="nc" id="L18">        } catch (IOException e) {</span>
-<span class="nc" id="L19">            log.error(StringFile.ErrorToConnect);</span>
+<span class="nc" id="L19">            log.error(StringFile.ERROR_TO_CONNECT_TO_WEBSITE_CHECK_URL_OR_ACCESS_TO_SITE);</span>
 <span class="nc" id="L20">        }</span>
 <span class="nc" id="L21">        return document.toString();</span>
     }
