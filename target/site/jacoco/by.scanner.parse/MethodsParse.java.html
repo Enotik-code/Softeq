@@ -8,14 +8,14 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-<span class="nc" id="L11">public class MethodsParse implements ParseInterface {</span>
-<span class="nc" id="L12">    public static final Scanner scInteger = new Scanner(System.in);</span>
-<span class="nc" id="L13">    public static final Scanner scString = new Scanner(System.in);</span>
+<span class="fc" id="L11">public class MethodsParse implements ParseInterface {</span>
+<span class="fc" id="L12">    public static final Scanner scInteger = new Scanner(System.in);</span>
+<span class="fc" id="L13">    public static final Scanner scString = new Scanner(System.in);</span>
 
-<span class="nc" id="L15">    private final List&lt;String&gt; wordsList = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L15">    private final List&lt;String&gt; wordsList = new ArrayList&lt;&gt;();</span>
 
 
-<span class="nc" id="L18">    static Logger log = Logger.getLogger(MethodsParse.class.getName());</span>
+<span class="fc" id="L18">    static Logger log = Logger.getLogger(MethodsParse.class.getName());</span>
 
     public Integer setCountOfWords(){
         int number;
@@ -47,23 +47,23 @@ import java.util.regex.Pattern;
     }
 
     public String setCountWordsOnHtml(String webSiteHtml, String myWord) {
-<span class="nc" id="L50">        Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);</span>
-<span class="nc" id="L51">        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.REGEX_FOR_REMOVE_JAVA_SCRIPT_CODE),</span>
+<span class="fc" id="L50">        Pattern pattern = Pattern.compile(myWord, Pattern.CASE_INSENSITIVE);</span>
+<span class="fc" id="L51">        Matcher matcher = pattern.matcher(removeTags(removeTags(webSiteHtml, StringFile.REGEX_FOR_REMOVE_JAVA_SCRIPT_CODE),</span>
                 StringFile.REGEX_FOR_REMOVE_TAGS));
-<span class="nc" id="L53">        HashMap&lt;String, Integer&gt; wordToCount = new HashMap&lt;&gt;();</span>
-<span class="nc bnc" id="L54" title="All 2 branches missed.">        while(matcher.find()){</span>
-<span class="nc bnc" id="L55" title="All 2 branches missed.">            if(!wordToCount.containsKey(myWord)){</span>
-<span class="nc" id="L56">                wordToCount.put(myWord, 0);</span>
+<span class="fc" id="L53">        HashMap&lt;String, Integer&gt; wordToCount = new HashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        while(matcher.find()){</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            if(!wordToCount.containsKey(myWord)){</span>
+<span class="fc" id="L56">                wordToCount.put(myWord, 0);</span>
             }
-<span class="nc" id="L58">            wordToCount.put(myWord, wordToCount.get(myWord) + 1);</span>
+<span class="fc" id="L58">            wordToCount.put(myWord, wordToCount.get(myWord) + 1);</span>
         }
-<span class="nc" id="L60">         return StringFile.RESULT_FOR + myWord + &quot; - &quot; + wordToCount.get(myWord);</span>
+<span class="fc" id="L60">         return StringFile.RESULT_FOR + myWord + &quot; - &quot; + wordToCount.get(myWord);</span>
     }
 
     public String removeTags(String htmlCode, String regex){
-<span class="nc" id="L64">        Pattern pattern = Pattern.compile(regex);</span>
-<span class="nc" id="L65">        Matcher matcher = pattern.matcher(htmlCode);</span>
-<span class="nc" id="L66">        return  matcher.replaceAll(&quot;&quot;);</span>
+<span class="fc" id="L64">        Pattern pattern = Pattern.compile(regex);</span>
+<span class="fc" id="L65">        Matcher matcher = pattern.matcher(htmlCode);</span>
+<span class="fc" id="L66">        return  matcher.replaceAll(&quot;&quot;);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

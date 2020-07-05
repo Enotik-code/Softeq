@@ -7,18 +7,18 @@ import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 
-<span class="nc" id="L10">public class HtmlParse {</span>
+<span class="fc" id="L10">public class HtmlParse {</span>
 
-<span class="nc" id="L12">    static Logger log = Logger.getLogger(HtmlParse.class.getName());</span>
+<span class="fc" id="L12">    static Logger log = Logger.getLogger(HtmlParse.class.getName());</span>
 
     public String setHtmlCode(String url) {
-<span class="nc" id="L15">            Document document = new Document(url);</span>
+<span class="fc" id="L15">            Document document = new Document(url);</span>
         try {
-<span class="nc" id="L17">            document = Jsoup.connect(url).get();</span>
-<span class="nc" id="L18">        } catch (IOException e) {</span>
-<span class="nc" id="L19">            log.error(StringFile.ERROR_TO_CONNECT_TO_WEBSITE_CHECK_URL_OR_ACCESS_TO_SITE);</span>
-<span class="nc" id="L20">        }</span>
-<span class="nc" id="L21">        return document.toString();</span>
+<span class="fc" id="L17">            document = Jsoup.connect(url).get();</span>
+<span class="fc" id="L18">        } catch (IOException e) {</span>
+<span class="fc" id="L19">            log.error(StringFile.ERROR_TO_CONNECT_TO_WEBSITE_CHECK_URL_OR_ACCESS_TO_SITE);</span>
+<span class="fc" id="L20">        }</span>
+<span class="fc" id="L21">        return document.toString();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>
